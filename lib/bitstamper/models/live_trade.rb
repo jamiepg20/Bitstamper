@@ -1,6 +1,6 @@
 module Bitstamper
   module Models
-    class LiveTrade
+    class LiveTrade < Base
       attr_accessor :id, :buy_order_id, :sell_order_id
       attr_accessor :amount, :amount_str, :price, :price_str
       attr_accessor :epoch, :timestamp

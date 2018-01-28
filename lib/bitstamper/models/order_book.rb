@@ -1,6 +1,6 @@
 module Bitstamper
   module Models
-    class OrderBook
+    class OrderBook < Base
       attr_accessor :timestamp, :bids, :asks
       
       def initialize(hash)

@@ -1,6 +1,6 @@
 module Bitstamper
   module Models
-    class Balance
+    class Balance < Base
       attr_accessor :currency, :available, :balance, :reserved, :fees
       
       def initialize(hash)
