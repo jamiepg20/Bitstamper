@@ -11,3 +11,5 @@
 .rspec_status
 
 credentials.yml
+.ruby-version
+.ruby-gemset
