@@ -3,15 +3,15 @@ module Bitstamper
     module Public
       module Ticker
       
-        def daily_ticker(currency_pair: "btcusd")
-          ticker(currency_pair: currency_pair, interval: :daily)
+        def daily_ticker(currency_pair: "btcusd", options: {})
+          ticker(currency_pair: currency_pair, interval: :daily, options: options)
         end
       
-        def hourly_ticker(currency_pair: "btcusd")
-          ticker(currency_pair: currency_pair, interval: :hourly)
+        def hourly_ticker(currency_pair: "btcusd", options: {})
+          ticker(currency_pair: currency_pair, interval: :hourly, options: options)
         end
       
-        def ticker(currency_pair: "btcusd", interval: :daily)
+        def ticker(currency_pair: "btcusd", interval: :daily, options: {})
           path        =   case interval.to_sym
             when :daily
               !currency_pair.to_s.empty? ? "/v2/ticker/#{::Bitstamper::Utilities.fix_currency_pair(currency_pair)}" : "/ticker"
@@ -19,7 +19,7 @@ module Bitstamper
               !currency_pair.to_s.empty? ? "/v2/ticker_hour/#{::Bitstamper::Utilities.fix_currency_pair(currency_pair)}" : "/ticker_hour"
           end
 
-          response    =   get(path)
+          response    =   get(path, options: options)
         
           ::Bitstamper::Models::Ticker.new(response.merge("currency_pair" => currency_pair)) if response
         end
