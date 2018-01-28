@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.bitstamp.net/api/v2/sell/ethusd/
+    body:
+      encoding: UTF-8
+      string: amount=0.01&key=BITSTAMP_KEY&nonce=1517155780294263040&price=2000.0&signature=5C94C9D2D8CC48F594A125A23B63A6D87B151752AC902A2AEF3D0ADADEDB8E7A
+    headers:
+      User-Agent:
+      - Bitstamp Ruby
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - x-requested-with, Content-Type, origin, accept, cache-control
+      Access-Control-Allow-Methods:
+      - POST, GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0
+      Content-Language:
+      - en
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 28 Jan 2018 16:09:40 GMT
+      Expires:
+      - Sun, 28 Jan 2018 16:09:40 GMT
+      Last-Modified:
+      - Sun, 28 Jan 2018 16:09:40 GMT
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Vary:
+      - Accept-Language
+      X-Frame-Options:
+      - SAMEORIGIN
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - "___utmvaIEumyLc=NSG\x01TCVC; path=/; Max-Age=900"
+      - '___utmvbIEumyLc=YZK XDnONalu: Sth; path=/; Max-Age=900'
+      - ___utmvmIEumyLc=rQLguBgGqJw; path=/; Max-Age=900
+      - incap_ses_452_99025=LkN4BZ3oaRARD8kpcdRFBsT1bVoAAAAAsH0h9ZVUi02uSc8IIcvWhQ==;
+        path=/; Domain=.bitstamp.net
+      - nlbi_99025=3Av1OoqCpxqh6xrO8F1n9AAAAACegFH4hPqvCZD0im3AiD2S; path=/; Domain=.bitstamp.net
+      - visid_incap_99025=cYNYDEx7RKC7n/DWSaaF+8T1bVoAAAAAQUIPAAAAAACLq2UXBB7gwnIB9GC58ZZH;
+        expires=Mon, 28 Jan 2019 12:39:00 GMT; path=/; Domain=.bitstamp.net
+      X-Iinfo:
+      - 6-56304457-56263924 PNNN RT(1517155780011 111) q(0 0 0 -1) r(0 0) U6
+      X-Cdn:
+      - Incapsula
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status": "error", "reason": {"__all__": ["You have only 0.00000000
+        ETH available. Check your account balance for details."]}}'
+    http_version: 
+  recorded_at: Sun, 28 Jan 2018 16:09:40 GMT
+recorded_with: VCR 4.0.0

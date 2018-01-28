@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.bitstamp.net/api/v2/ticker/btcusd/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Bitstamp Ruby
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Etag:
+      - '"6163f-c0-563d3ae0ffee2"'
+      Last-Modified:
+      - Sun, 28 Jan 2018 10:34:53 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '144'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - max-age=2, public
+      Expires:
+      - Sun, 28 Jan 2018 10:35:03 GMT
+      Date:
+      - Sun, 28 Jan 2018 10:35:01 GMT
+      Set-Cookie:
+      - "___utmvaIEumyLc=wHz\x01CAIy; path=/; Max-Age=900"
+      - '___utmvbIEumyLc=yZb XymOjalB: mtY; path=/; Max-Age=900'
+      - ___utmvmIEumyLc=rfUCNMZbhZJ; path=/; Max-Age=900
+      - incap_ses_452_99025=LIMRJ5O1CFRqHXEpcdRFBlWnbVoAAAAAbfhudX9gPC8TKE42EOodYQ==;
+        path=/; Domain=.bitstamp.net
+      - visid_incap_99025=gLnhz5SnTb2dHWlZR0foqFWnbVoAAAAAQUIPAAAAAABn+h1I/zK9uXIIY42tSBVd;
+        expires=Sun, 27 Jan 2019 12:38:59 GMT; path=/; Domain=.bitstamp.net
+      X-Iinfo:
+      - 6-53557648-0 0CNN RT(1517135701299 93) q(0 -1 -1 0) r(0 -1)
+      X-Cdn:
+      - Incapsula
+    body:
+      encoding: ASCII-8BIT
+      string: '{"high": "11989.15", "last": "11847.99", "timestamp": "1517135692",
+        "bid": "11801.09", "vwap": "11499.77", "volume": "11185.88675316", "low":
+        "10815.84", "ask": "11829.86", "open": "11446.54"}'
+    http_version: 
+  recorded_at: Sun, 28 Jan 2018 10:35:01 GMT
+recorded_with: VCR 4.0.0

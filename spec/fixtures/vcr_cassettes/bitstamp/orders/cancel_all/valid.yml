@@ -1,0 +1,139 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.bitstamp.net/api/cancel_all_orders/
+    body:
+      encoding: UTF-8
+      string: key=BITSTAMP_KEY&nonce=1517153185716367872&signature=D2B1AFBE11F43F740BCF91045E3BD3F9546BFC1666835735EA4BEBA1AE8D437B
+    headers:
+      User-Agent:
+      - Bitstamp Ruby
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - x-requested-with, Content-Type, origin, accept, cache-control
+      Access-Control-Allow-Methods:
+      - POST, GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0
+      Content-Language:
+      - en
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 28 Jan 2018 15:26:25 GMT
+      Expires:
+      - Sun, 28 Jan 2018 15:26:25 GMT
+      Last-Modified:
+      - Sun, 28 Jan 2018 15:26:25 GMT
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Vary:
+      - Accept-Language
+      X-Frame-Options:
+      - SAMEORIGIN
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - "___utmvaIEumyLc=sDP\x01BqIF; path=/; Max-Age=900"
+      - '___utmvbIEumyLc=KZC XyWOPala: dtP; path=/; Max-Age=900'
+      - ___utmvmIEumyLc=PcEuCduULtK; path=/; Max-Age=900
+      - incap_ses_452_99025=L+27QF34A2BH1b0pcdRFBqHrbVoAAAAATuf29zjOnurnf87eFpc2dg==;
+        path=/; Domain=.bitstamp.net
+      - nlbi_99025=h613REgAThHYo+G38F1n9AAAAACc77Fjdg+1Go6GMyjnzIKS; path=/; Domain=.bitstamp.net
+      - visid_incap_99025=+Qq+w/SBRwq9/FHuwNZf6aHrbVoAAAAAQUIPAAAAAABLvlNiPECHx7DKo0DY6/Lf;
+        expires=Mon, 28 Jan 2019 12:38:59 GMT; path=/; Domain=.bitstamp.net
+      X-Iinfo:
+      - 10-131991573-131963931 PNNN RT(1517153185416 114) q(0 0 0 -1) r(0 0) U6
+      X-Cdn:
+      - Incapsula
+    body:
+      encoding: ASCII-8BIT
+      string: 'true'
+    http_version: 
+  recorded_at: Sun, 28 Jan 2018 15:26:26 GMT
+- request:
+    method: post
+    uri: https://www.bitstamp.net/api/cancel_all_orders/
+    body:
+      encoding: UTF-8
+      string: key=BITSTAMP_KEY&nonce=1517153186006906880&signature=F0FE058E71A1FF09B3380422A5179995723B21DB5784E7170D2F4717BB358EB1
+    headers:
+      User-Agent:
+      - Bitstamp Ruby
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - x-requested-with, Content-Type, origin, accept, cache-control
+      Access-Control-Allow-Methods:
+      - POST, GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0
+      Content-Language:
+      - en
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 28 Jan 2018 15:26:26 GMT
+      Expires:
+      - Sun, 28 Jan 2018 15:26:26 GMT
+      Last-Modified:
+      - Sun, 28 Jan 2018 15:26:26 GMT
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Vary:
+      - Accept-Language
+      X-Frame-Options:
+      - SAMEORIGIN
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - "___utmvaIEumyLc=Lff\x01FyDv; path=/; Max-Age=900"
+      - '___utmvbIEumyLc=JZZ XjUOaalC: rte; path=/; Max-Age=900'
+      - ___utmvmIEumyLc=lWTdDsHayCt; path=/; Max-Age=900
+      - incap_ses_452_99025=nDdkLnMxTF2S1b0pcdRFBqHrbVoAAAAAmZbADsB+lSDQ5cIAVcNMkw==;
+        path=/; Domain=.bitstamp.net
+      - nlbi_99025=CjW6YEHZiUUcsiMP8F1n9AAAAAD+wKbTXuhD6yT/g4CUfUuC; path=/; Domain=.bitstamp.net
+      - visid_incap_99025=nVnw/n1OTfClfq1uT912LqHrbVoAAAAAQUIPAAAAAAAxopHeIRks4EjgLyQB0G61;
+        expires=Mon, 28 Jan 2019 12:39:21 GMT; path=/; Domain=.bitstamp.net
+      X-Iinfo:
+      - 7-80995241-80892333 PNNN RT(1517153185712 118) q(0 0 0 -1) r(0 0) U6
+      X-Cdn:
+      - Incapsula
+    body:
+      encoding: ASCII-8BIT
+      string: 'true'
+    http_version: 
+  recorded_at: Sun, 28 Jan 2018 15:26:26 GMT
+recorded_with: VCR 4.0.0

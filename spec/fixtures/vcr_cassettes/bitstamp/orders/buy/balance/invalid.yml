@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.bitstamp.net/api/v2/buy/ethusd/
+    body:
+      encoding: UTF-8
+      string: amount=0.01&key=BITSTAMP_KEY&nonce=1517154964131704064&price=501.0&signature=7DDEC158BF86446A9093910B16581BAAA5EC7C75A5CD4AD86A44346F943EB86C
+    headers:
+      User-Agent:
+      - Bitstamp Ruby
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - x-requested-with, Content-Type, origin, accept, cache-control
+      Access-Control-Allow-Methods:
+      - POST, GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0
+      Content-Language:
+      - en
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 28 Jan 2018 15:56:04 GMT
+      Expires:
+      - Sun, 28 Jan 2018 15:56:04 GMT
+      Last-Modified:
+      - Sun, 28 Jan 2018 15:56:04 GMT
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Vary:
+      - Accept-Language
+      X-Frame-Options:
+      - SAMEORIGIN
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - "___utmvaIEumyLc=rTS\x01JVJM; path=/; Max-Age=900"
+      - '___utmvbIEumyLc=wZR XkOOpalZ: FtM; path=/; Max-Age=900'
+      - ___utmvmIEumyLc=VxQofzloPcC; path=/; Max-Age=900
+      - incap_ses_452_99025=c/jjMIcL7l1ydMUpcdRFBpPybVoAAAAAd2vraWCMCN0amb49JKAckQ==;
+        path=/; Domain=.bitstamp.net
+      - nlbi_99025=NdwvR7OjT0xkiGu28F1n9AAAAABMTZwCeLo7ImIYG+POpy/P; path=/; Domain=.bitstamp.net
+      - visid_incap_99025=Ly0ghgCNQIqUMtqGloZNP5PybVoAAAAAQUIPAAAAAADpRiSwVMVwwwQ0APnKybbi;
+        expires=Mon, 28 Jan 2019 12:39:02 GMT; path=/; Domain=.bitstamp.net
+      X-Iinfo:
+      - 5-81987860-81972655 PNNN RT(1517154963834 90) q(0 0 0 -1) r(0 0) U6
+      X-Cdn:
+      - Incapsula
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status": "error", "reason": {"__all__": ["You need 5.03 USD to open
+        that order. You have only 0.00 USD available. Check your account balance for
+        details."]}}'
+    http_version: 
+  recorded_at: Sun, 28 Jan 2018 15:56:04 GMT
+recorded_with: VCR 4.0.0

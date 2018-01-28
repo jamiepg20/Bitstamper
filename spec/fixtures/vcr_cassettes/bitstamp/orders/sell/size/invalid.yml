@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.bitstamp.net/api/v2/sell/eurusd/
+    body:
+      encoding: UTF-8
+      string: amount=0.0001&key=BITSTAMP_KEY&nonce=1517155779746440960&price=10000.0&signature=EBF1758177FB5CF95DC5326E79D20E4AD0AFC51F09D6FB4CF980A052FEEF6AE6
+    headers:
+      User-Agent:
+      - Bitstamp Ruby
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - x-requested-with, Content-Type, origin, accept, cache-control
+      Access-Control-Allow-Methods:
+      - POST, GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0
+      Content-Language:
+      - en
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 28 Jan 2018 16:09:39 GMT
+      Expires:
+      - Sun, 28 Jan 2018 16:09:39 GMT
+      Last-Modified:
+      - Sun, 28 Jan 2018 16:09:39 GMT
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Vary:
+      - Accept-Language
+      X-Frame-Options:
+      - SAMEORIGIN
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - "___utmvaIEumyLc=SPQ\x01VWjc; path=/; Max-Age=900"
+      - '___utmvbIEumyLc=sZo XGxOgalj: htO; path=/; Max-Age=900'
+      - ___utmvmIEumyLc=CQzzlCtXSHW; path=/; Max-Age=900
+      - incap_ses_452_99025=3XgBM9A3PkVpDskpcdRFBsP1bVoAAAAA56CBpXuI5X/IUc+0d1cd/Q==;
+        path=/; Domain=.bitstamp.net
+      - nlbi_99025=PeIUNDlul1qgGx/l8F1n9AAAAABWBgUVPFDHp3Mjm6gL6NDl; path=/; Domain=.bitstamp.net
+      - visid_incap_99025=zuAZ49AJRYq0c6Vpfb4+xMP1bVoAAAAAQUIPAAAAAACu0XWzfUKtsJ3eqErgMTqY;
+        expires=Mon, 28 Jan 2019 12:39:12 GMT; path=/; Domain=.bitstamp.net
+      X-Iinfo:
+      - 8-97763242-97762727 PNNN RT(1517155779444 95) q(0 0 0 -1) r(0 0) U6
+      X-Cdn:
+      - Incapsula
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status": "error", "reason": {"__all__": ["Minimum order size is 5.0
+        USD"]}}'
+    http_version: 
+  recorded_at: Sun, 28 Jan 2018 16:09:39 GMT
+recorded_with: VCR 4.0.0

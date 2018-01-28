@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.bitstamp.net/api/cancel_all_orders/
+    body:
+      encoding: UTF-8
+      string: key=BITSTAMP_KEY&nonce=1517153185431288064&signature=6504F4FCED5C2416963CADC06AFBD7B5AB7C62D28C084DEA183877133B9C9A46
+    headers:
+      User-Agent:
+      - Bitstamp Ruby
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - x-requested-with, Content-Type, origin, accept, cache-control
+      Access-Control-Allow-Methods:
+      - POST, GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0
+      Content-Language:
+      - en
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 28 Jan 2018 15:26:25 GMT
+      Expires:
+      - Sun, 28 Jan 2018 15:26:25 GMT
+      Last-Modified:
+      - Sun, 28 Jan 2018 15:26:25 GMT
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Vary:
+      - Accept-Language
+      X-Frame-Options:
+      - SAMEORIGIN
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - "___utmvaIEumyLc=wOY\x01iDZT; path=/; Max-Age=900"
+      - '___utmvbIEumyLc=DZu XgdOpalZ: KtT; path=/; Max-Age=900'
+      - ___utmvmIEumyLc=mkgWSlhtTFP; path=/; Max-Age=900
+      - incap_ses_452_99025=OHnBZAKdpBH91L0pcdRFBqHrbVoAAAAAl+d0G+MJDMTStHzkWlVIyQ==;
+        path=/; Domain=.bitstamp.net
+      - nlbi_99025=no5+ARprmGUy0FDq8F1n9AAAAACrg4rHRY0+IXXJHbQUmtkZ; path=/; Domain=.bitstamp.net
+      - visid_incap_99025=4v5X8Y84S9eD2H0SgocgRKHrbVoAAAAAQUIPAAAAAAARZlmM6Aur+361PtGkxT4y;
+        expires=Mon, 28 Jan 2019 12:39:21 GMT; path=/; Domain=.bitstamp.net
+      X-Iinfo:
+      - 7-80995136-80892333 PNNN RT(1517153185173 91) q(0 0 0 -1) r(0 0) U6
+      X-Cdn:
+      - Incapsula
+    body:
+      encoding: ASCII-8BIT
+      string: '{"error": "No permission found"}'
+    http_version: 
+  recorded_at: Sun, 28 Jan 2018 15:26:25 GMT
+recorded_with: VCR 4.0.0

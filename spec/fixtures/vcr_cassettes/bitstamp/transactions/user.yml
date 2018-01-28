@@ -1,0 +1,115 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.bitstamp.net/api/v2/user_transactions/
+    body:
+      encoding: UTF-8
+      string: key=BITSTAMP_KEY&limit=100&nonce=1517137398100633088&offset=0&signature=32B960984AC835923A69DA71DBE4DDCF63C9EFC71D9E391708F98F49E95DE427&sort=desc
+    headers:
+      User-Agent:
+      - Bitstamp Ruby
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - x-requested-with, Content-Type, origin, accept, cache-control
+      Access-Control-Allow-Methods:
+      - POST, GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0
+      Content-Language:
+      - en
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 28 Jan 2018 11:03:18 GMT
+      Expires:
+      - Sun, 28 Jan 2018 11:03:18 GMT
+      Last-Modified:
+      - Sun, 28 Jan 2018 11:03:18 GMT
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Vary:
+      - Accept-Language
+      X-Frame-Options:
+      - SAMEORIGIN
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - "___utmvaIEumyLc=uGL\x01wGEO; path=/; Max-Age=900"
+      - '___utmvbIEumyLc=WZP XDfOIalQ: Mtx; path=/; Max-Age=900'
+      - ___utmvmIEumyLc=ndZJyitsDOx; path=/; Max-Age=900
+      - incap_ses_452_99025=MHaaRlQKYGGxpHgpcdRFBvatbVoAAAAA4JGOwtEko27edAIvHlwBqg==;
+        path=/; Domain=.bitstamp.net
+      - nlbi_99025=Sl2gLV0K0yO/RuvV8F1n9AAAAAB/O5uNMJ6L3h7crmb7UgiU; path=/; Domain=.bitstamp.net
+      - visid_incap_99025=eg+fTwEpRaGku7mw2nMo9PatbVoAAAAAQUIPAAAAAAAz9eWGb+PROcjOrJEPccjP;
+        expires=Sun, 27 Jan 2019 12:38:59 GMT; path=/; Domain=.bitstamp.net
+      X-Iinfo:
+      - 6-53779484-53761867 PNNN RT(1517137397870 297) q(0 0 0 -1) r(1 1) U6
+      X-Cdn:
+      - Incapsula
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"fee": "0.00", "btc_usd": "0.00", "datetime": "2018-01-24 13:15:08",
+        "usd": 0.0, "btc": 0.0, "type": "0", "id": 49313217, "eur": "500.00"}, {"fee":
+        "0.00", "btc_usd": "0.00", "datetime": "2018-01-23 14:30:17", "usd": 0.0,
+        "btc": 0.0, "type": "0", "id": 49112139, "eur": "500.00"}, {"fee": "0.00000000",
+        "btc_usd": "0.00", "datetime": "2018-01-20 12:00:22", "ltc": "-5.52069115",
+        "usd": 0.0, "btc": 0.0, "type": "1", "id": 48337959, "eur": 0.0}, {"fee":
+        "2.29", "ltc_eur": 165.81000000, "order_id": 800679456, "datetime": "2018-01-20
+        11:55:22", "ltc": "5.52069115", "usd": 0.0, "btc": 0.0, "type": "2", "id":
+        48337064, "eur": "-915.39"}, {"fee": "0.23000000", "order_id": 799866367,
+        "datetime": "2018-01-20 08:20:59", "usd": 0.0, "btc": 0.0, "eth": "-0.10000000",
+        "eth_eur": 919.99000000, "type": "2", "id": 48312136, "eur": "92.00"}, {"fee":
+        "2.07000000", "order_id": 799866367, "datetime": "2018-01-20 08:20:58", "usd":
+        0.0, "btc": 0.0, "eth": "-0.90000000", "eth_eur": 919.99000000, "type": "2",
+        "id": 48312132, "eur": "827.99"}, {"fee": "0.00000000", "btc_usd": "0.00",
+        "datetime": "2018-01-20 07:24:55", "usd": 0.0, "btc": 0.0, "eth": "1.00000000",
+        "type": "0", "id": 48304606, "eur": 0.0}, {"fee": "0.00000000", "btc_usd":
+        "0.00", "datetime": "2018-01-19 18:03:26", "usd": 0.0, "btc": 0.0, "eth":
+        "-0.02646246", "type": "1", "id": 48176561, "eur": 0.0}, {"fee": "0.06", "order_id":
+        796136521, "datetime": "2018-01-19 18:00:36", "usd": 0.0, "btc": 0.0, "eth":
+        "0.02646246", "eth_eur": 850.02000000, "type": "2", "id": 48175872, "eur":
+        "-22.49"}, {"fee": "0.00000000", "btc_usd": "0.00", "datetime": "2018-01-19
+        17:46:05", "usd": 0.0, "btc": 0.0, "eth": "-1.14704532", "type": "1", "id":
+        48170682, "eur": 0.0}, {"fee": "2.44", "order_id": 796036909, "datetime":
+        "2018-01-19 17:36:16", "usd": 0.0, "btc": 0.0, "eth": "1.14704532", "eth_eur":
+        850.01000000, "type": "2", "id": 48166114, "eur": "-975.00"}, {"fee": "0.00",
+        "btc_usd": "0.00", "datetime": "2018-01-19 12:45:09", "usd": 0.0, "btc": 0.0,
+        "type": "0", "id": 48101498, "eur": "1000.00"}, {"fee": "0.00000000", "btc_usd":
+        "0.00", "datetime": "2018-01-17 21:58:56", "usd": 0.0, "btc": "-0.21439029",
+        "type": "1", "id": 47351425, "eur": 0.0}, {"fee": "0.23", "order_id": 783645067,
+        "datetime": "2018-01-17 21:49:56", "usd": 0.0, "btc": "0.00974671", "btc_eur":
+        9314.25000000, "type": "2", "id": 47342469, "eur": "-90.78"}, {"fee": "0.37",
+        "order_id": 783645067, "datetime": "2018-01-17 21:49:56", "usd": 0.0, "btc":
+        "0.01572558", "btc_eur": 9305.00000000, "type": "2", "id": 47342463, "eur":
+        "-146.33"}, {"fee": "0.29", "order_id": 783645067, "datetime": "2018-01-17
+        21:49:56", "usd": 0.0, "btc": "0.01230600", "btc_eur": 9304.99000000, "type":
+        "2", "id": 47342452, "eur": "-114.51"}, {"fee": "0.29", "order_id": 783645067,
+        "datetime": "2018-01-17 21:49:55", "usd": 0.0, "btc": "0.01230600", "btc_eur":
+        9304.99000000, "type": "2", "id": 47342441, "eur": "-114.51"}, {"fee": "3.54",
+        "order_id": 783645067, "datetime": "2018-01-17 21:49:55", "usd": 0.0, "btc":
+        "0.15200000", "btc_eur": 9304.99000000, "type": "2", "id": 47342428, "eur":
+        "-1414.36"}, {"fee": "0.29", "order_id": 783645067, "datetime": "2018-01-17
+        21:49:54", "usd": 0.0, "btc": "0.01230600", "btc_eur": 9304.99000000, "type":
+        "2", "id": 47342423, "eur": "-114.51"}, {"fee": "0.00", "btc_usd": "0.00",
+        "datetime": "2018-01-17 13:15:14", "usd": 0.0, "btc": 0.0, "type": "0", "id":
+        46967865, "eur": "2000.00"}]'
+    http_version: 
+  recorded_at: Sun, 28 Jan 2018 11:03:18 GMT
+recorded_with: VCR 4.0.0

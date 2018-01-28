@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.bitstamp.net/api/v2/cancel_order/
+    body:
+      encoding: UTF-8
+      string: id=851172229&key=BITSTAMP_KEY&nonce=1517153034795418880&signature=6AC16615885BB472D661D99BF1BE4742290B9477E662772CEB0A72A2189FC599
+    headers:
+      User-Agent:
+      - Bitstamp Ruby
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 403
+      message: Authentication Failed
+    headers:
+      Access-Control-Allow-Headers:
+      - x-requested-with, Content-Type, origin, accept, cache-control
+      Access-Control-Allow-Methods:
+      - POST, GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0
+      Content-Language:
+      - en
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 28 Jan 2018 15:23:55 GMT
+      Expires:
+      - Sun, 28 Jan 2018 15:23:55 GMT
+      Last-Modified:
+      - Sun, 28 Jan 2018 15:23:55 GMT
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Vary:
+      - Accept-Language
+      X-Frame-Options:
+      - SAMEORIGIN
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - "___utmvaIEumyLc=RUZ\x01VJSE; path=/; Max-Age=900"
+      - '___utmvbIEumyLc=UZW XKJORalp: HtV; path=/; Max-Age=900'
+      - ___utmvmIEumyLc=zSkSaXJBrhe; path=/; Max-Age=900
+      - incap_ses_452_99025=6JXnertw0BQBL70pcdRFBgrrbVoAAAAAx8R42ygcSq5B/ALY3l/vpg==;
+        path=/; Domain=.bitstamp.net
+      - nlbi_99025=v7yjHOdSlVXz+XmY8F1n9AAAAAB1GmUQ30mIzZaCYVbzH7tS; path=/; Domain=.bitstamp.net
+      - visid_incap_99025=pxEDIpcaTeKfYcKN/jELUgrrbVoAAAAAQUIPAAAAAABsFXuOVXg8HUTjkab+jV6Z;
+        expires=Mon, 28 Jan 2019 12:39:00 GMT; path=/; Domain=.bitstamp.net
+      X-Iinfo:
+      - 6-55908454-55887039 PNNN RT(1517153034507 110) q(0 0 0 -1) r(0 0) U6
+      X-Cdn:
+      - Incapsula
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status": "error", "reason": "No permission found", "code": "API0003"}'
+    http_version: 
+  recorded_at: Sun, 28 Jan 2018 15:23:55 GMT
+recorded_with: VCR 4.0.0

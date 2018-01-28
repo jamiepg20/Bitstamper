@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.bitstamp.net/api/v2/buy/etheur/
+    body:
+      encoding: UTF-8
+      string: amount=1.0e-10&key=BITSTAMP_KEY&nonce=1517154406209063936&price=501.0&signature=DD516493BD5EDB9084137591660E7103F6A13145C80591F72265BCB7364C0634
+    headers:
+      User-Agent:
+      - Bitstamp Ruby
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - x-requested-with, Content-Type, origin, accept, cache-control
+      Access-Control-Allow-Methods:
+      - POST, GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0
+      Content-Language:
+      - en
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 28 Jan 2018 15:46:46 GMT
+      Expires:
+      - Sun, 28 Jan 2018 15:46:46 GMT
+      Last-Modified:
+      - Sun, 28 Jan 2018 15:46:46 GMT
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Vary:
+      - Accept-Language
+      X-Frame-Options:
+      - SAMEORIGIN
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - "___utmvaIEumyLc=sZb\x01PpXu; path=/; Max-Age=900"
+      - '___utmvbIEumyLc=IZX XbKOEaly: Ztc; path=/; Max-Age=900'
+      - ___utmvmIEumyLc=ROQrjgmFcMa; path=/; Max-Age=900
+      - incap_ses_452_99025=YhMZDatLZEahFsMpcdRFBmbwbVoAAAAArV5ZhB5BXKyY7Ub+NciHuw==;
+        path=/; Domain=.bitstamp.net
+      - nlbi_99025=i/QOY5SxrGNePUqD8F1n9AAAAAAGOrkw5/khclLILAuwlZe1; path=/; Domain=.bitstamp.net
+      - visid_incap_99025=yLy0BkpbTxeo6ILfjf5gFWXwbVoAAAAAQUIPAAAAAACDy/LYdFDCmgxk9zT50uCX;
+        expires=Mon, 28 Jan 2019 12:39:13 GMT; path=/; Domain=.bitstamp.net
+      X-Iinfo:
+      - 0-17872844-17872848 NNNN CT(16 19 0) RT(1517154405903 84) q(0 0 1 0) r(1 1)
+        U6
+      X-Cdn:
+      - Incapsula
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status": "error", "reason": {"amount": ["Ensure that there are no
+        more than 8 decimal places."], "__all__": [""]}}'
+    http_version: 
+  recorded_at: Sun, 28 Jan 2018 15:46:46 GMT
+recorded_with: VCR 4.0.0

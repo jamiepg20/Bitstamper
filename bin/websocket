@@ -1,0 +1,55 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "bitstamper"
+
+# Example implementation of websockets
+# Subscribe to channels with subscribe! (product: :btcusd can also be passed to the method to only subscribe to a specific product/trading pair where applicable)
+# Implement your own callbacks to process the incoming data, set the callbacks on the client with client.callbacks[:callback] = lambda
+
+class WebsocketWrapper
+  def run!
+    client = ::Bitstamper::Websocket::Client.new(enable_logging: true)
+
+    begin
+      client.start!
+  
+      client.subscribe!(:live_trades)
+      client.subscribe!(:order_book)
+      client.subscribe!(:diff_order_book)
+      client.subscribe!(:live_orders)
+  
+      client.callbacks[:live_trades]                 = -> (channel, event, data) { custom_receive(channel, event, data) }
+      client.callbacks[:order_book]                  = -> (channel, event, data) { custom_receive(channel, event, data) }
+      client.callbacks[:diff_order_book]             = -> (channel, event, data) { custom_receive(channel, event, data) }
+  
+      client.callbacks[:live_orders][:order_created] = -> (channel, event, data) { custom_receive(channel, event, data) }
+      client.callbacks[:live_orders][:order_changed] = -> (channel, event, data) { custom_receive(channel, event, data) }
+      client.callbacks[:live_orders][:order_deleted] = -> (channel, event, data) { custom_receive(channel, event, data) }
+  
+      client.loop!
+    ensure
+      client.stop!
+    end
+  end
+  
+  def custom_receive(channel, event, data)
+    puts "\n\nUsing custom callbacks!\n\n"
+  
+    parsed = case channel[:name]
+      when /^live_trades/i
+        ::Bitstamper::Models::LiveTrade.new(data.symbolize_keys.merge(product: channel[:product]))
+      when /^order_book/i
+        ::Bitstamper::Models::OrderBook.new(data)
+      when /^diff_order_book/i
+        ::Bitstamper::Models::OrderBook.new(data)
+      when /^live_orders/i
+        ::Bitstamper::Models::Order.new(data.merge(event: event))
+    end
+  
+    pp parsed
+  end
+  
+end
+
+WebsocketWrapper.new.run!

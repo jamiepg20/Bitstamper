@@ -1,0 +1,80 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.bitstamp.net/api/order_status/
+    body:
+      encoding: UTF-8
+      string: id=783645067&key=BITSTAMP_KEY&nonce=1517142183180374016&signature=93C93627ED4D35439812225D9613FD788F0ABCF478CA872A70BDA8F68C9322CA
+    headers:
+      User-Agent:
+      - Bitstamp Ruby
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - x-requested-with, Content-Type, origin, accept, cache-control
+      Access-Control-Allow-Methods:
+      - POST, GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0
+      Content-Language:
+      - en
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 28 Jan 2018 12:23:03 GMT
+      Expires:
+      - Sun, 28 Jan 2018 12:23:03 GMT
+      Last-Modified:
+      - Sun, 28 Jan 2018 12:23:03 GMT
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Vary:
+      - Accept-Language
+      X-Frame-Options:
+      - SAMEORIGIN
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - incap_ses_452_99025=rhpmfmWfZmjTDY0pcdRFBqfAbVoAAAAAzZCnYBNP+pAelEr2HF/n1g==;
+        path=/; Domain=.bitstamp.net
+      - nlbi_99025=jY3HEhvbBRB9Rez78F1n9AAAAAD+qcGZujwWl8BpBJKIt/rc; path=/; Domain=.bitstamp.net
+      - visid_incap_99025=+N/lrSuASYeWk/L8RP0v96fAbVoAAAAAQUIPAAAAAAC0Lr+4KhoStI6b2YmCHtJN;
+        expires=Sun, 27 Jan 2019 12:39:12 GMT; path=/; Domain=.bitstamp.net
+      X-Iinfo:
+      - 9-111965746-111936138 PNNN RT(1517142183393 97) q(0 0 0 -1) r(1 1) U6
+      X-Cdn:
+      - Incapsula
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status": "Finished", "transactions": [{"fee": "0.29000000", "price":
+        "9304.99000000", "datetime": "2018-01-17 21:49:54", "btc": "0.01230600", "tid":
+        47342423, "type": 2, "eur": "114.50720694"}, {"fee": "3.54000000", "price":
+        "9304.99000000", "datetime": "2018-01-17 21:49:55", "btc": "0.15200000", "tid":
+        47342428, "type": 2, "eur": "1414.35848000"}, {"fee": "0.29000000", "price":
+        "9304.99000000", "datetime": "2018-01-17 21:49:55", "btc": "0.01230600", "tid":
+        47342441, "type": 2, "eur": "114.50720694"}, {"fee": "0.29000000", "price":
+        "9304.99000000", "datetime": "2018-01-17 21:49:56", "btc": "0.01230600", "tid":
+        47342452, "type": 2, "eur": "114.50720694"}, {"fee": "0.37000000", "price":
+        "9305.00000000", "datetime": "2018-01-17 21:49:56", "btc": "0.01572558", "tid":
+        47342463, "type": 2, "eur": "146.32652190"}, {"fee": "0.23000000", "price":
+        "9314.25000000", "datetime": "2018-01-17 21:49:56", "btc": "0.00974671", "tid":
+        47342469, "type": 2, "eur": "90.78337728"}]}'
+    http_version: 
+  recorded_at: Sun, 28 Jan 2018 12:23:03 GMT
+recorded_with: VCR 4.0.0

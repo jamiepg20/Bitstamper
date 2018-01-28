@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.bitstamp.net/api/v2/buy/etheur/
+    body:
+      encoding: UTF-8
+      string: amount=0.01&key=BITSTAMP_KEY&nonce=1517153034519780096&price=501.0&signature=2345A7F39D6FDBE668F72F8BF79C8D394351591DA115D286E73F06E8F9D39D29
+    headers:
+      User-Agent:
+      - Bitstamp Ruby
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - x-requested-with, Content-Type, origin, accept, cache-control
+      Access-Control-Allow-Methods:
+      - POST, GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0
+      Content-Language:
+      - en
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 28 Jan 2018 15:23:54 GMT
+      Expires:
+      - Sun, 28 Jan 2018 15:23:54 GMT
+      Last-Modified:
+      - Sun, 28 Jan 2018 15:23:54 GMT
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Vary:
+      - Accept-Language
+      X-Frame-Options:
+      - SAMEORIGIN
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - "___utmvaIEumyLc=XRw\x01MxIH; path=/; Max-Age=900"
+      - '___utmvbIEumyLc=CZs XCvOLalC: Rtc; path=/; Max-Age=900'
+      - ___utmvmIEumyLc=CVYgTpIKmEa; path=/; Max-Age=900
+      - incap_ses_452_99025=E2+cD9qFA3+2Lr0pcdRFBgrrbVoAAAAAogNQzD4iLwrFJad1iKCZew==;
+        path=/; Domain=.bitstamp.net
+      - nlbi_99025=bfQ2cOf/VypgElTa8F1n9AAAAABRZi+rnDXgqRvH5WJN+iXN; path=/; Domain=.bitstamp.net
+      - visid_incap_99025=r8pbiT1ZRk+cUSh9kUlrCgrrbVoAAAAAQUIPAAAAAABM1Ig31hnPTrcGaatmTgA4;
+        expires=Mon, 28 Jan 2019 12:39:13 GMT; path=/; Domain=.bitstamp.net
+      X-Iinfo:
+      - 2-34960295-34941767 PNNN RT(1517153034218 93) q(0 0 0 -1) r(0 0) U6
+      X-Cdn:
+      - Incapsula
+    body:
+      encoding: ASCII-8BIT
+      string: '{"price": "501.00", "amount": "0.01000000", "type": "0", "id": "851178914",
+        "datetime": "2018-01-28 15:23:54.740227"}'
+    http_version: 
+  recorded_at: Sun, 28 Jan 2018 15:23:54 GMT
+recorded_with: VCR 4.0.0

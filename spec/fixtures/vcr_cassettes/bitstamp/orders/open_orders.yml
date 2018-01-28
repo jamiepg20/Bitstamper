@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.bitstamp.net/api/v2/open_orders/all/
+    body:
+      encoding: UTF-8
+      string: key=BITSTAMP_KEY&nonce=1517138409543659008&signature=40EB092F6648065C9E3D89D5DFF1644854B376C8FA3DEE76A3E43CEEC8E274B6
+    headers:
+      User-Agent:
+      - Bitstamp Ruby
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - x-requested-with, Content-Type, origin, accept, cache-control
+      Access-Control-Allow-Methods:
+      - POST, GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Language:
+      - en
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 28 Jan 2018 11:20:09 GMT
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Vary:
+      - Accept-Language
+      X-Frame-Options:
+      - SAMEORIGIN
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - "___utmvaIEumyLc=PDL\x01BCcX; path=/; Max-Age=900"
+      - '___utmvbIEumyLc=oZr XEIOgalY: YtB; path=/; Max-Age=900'
+      - ___utmvmIEumyLc=YDqcSXzvDkQ; path=/; Max-Age=900
+      - incap_ses_452_99025=k9iCFo27QFy8B30pcdRFBumxbVoAAAAACv0WzWT8YfGZkTK5dIAJYQ==;
+        path=/; Domain=.bitstamp.net
+      - nlbi_99025=0tMsATg5cSdzMJ0g8F1n9AAAAACW6euWpuDq9RdObhd/vpGL; path=/; Domain=.bitstamp.net
+      - visid_incap_99025=IxceHc4+Su6hoabprIPCVumxbVoAAAAAQUIPAAAAAABB2rJ6+f9EMMZo+/XKlIEF;
+        expires=Sun, 27 Jan 2019 12:38:58 GMT; path=/; Domain=.bitstamp.net
+      X-Iinfo:
+      - 10-127773996-127750860 PNNN RT(1517138409312 114) q(0 0 0 -1) r(0 0) U6
+      X-Cdn:
+      - Incapsula
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"price": "781.82", "currency_pair": "ETH/EUR", "datetime": "2018-01-26
+        10:49:07", "amount": "1.27588188", "type": "0", "id": "837983329"}]'
+    http_version: 
+  recorded_at: Sun, 28 Jan 2018 11:20:09 GMT
+recorded_with: VCR 4.0.0

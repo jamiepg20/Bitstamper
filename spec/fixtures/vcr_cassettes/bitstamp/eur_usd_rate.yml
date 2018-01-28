@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.bitstamp.net/api/eur_usd/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Bitstamp Ruby
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - x-requested-with, Content-Type, origin, accept, cache-control
+      Access-Control-Allow-Methods:
+      - POST, GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0
+      Content-Language:
+      - en
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 28 Jan 2018 18:07:16 GMT
+      Expires:
+      - Sun, 28 Jan 2018 18:07:16 GMT
+      Last-Modified:
+      - Sun, 28 Jan 2018 18:07:16 GMT
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Vary:
+      - Accept-Language
+      X-Frame-Options:
+      - SAMEORIGIN
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - incap_ses_452_99025=VsuDII1/2wm1rOgpcdRFBlMRbloAAAAA0cV02SmDdGJJ1B9AcGiFbw==;
+        path=/; Domain=.bitstamp.net
+      - nlbi_99025=oCF2MelDFTZ23UXe8F1n9AAAAAAmI5mCnb/TWVX03oSnS9zk; path=/; Domain=.bitstamp.net
+      - visid_incap_99025=6cMzlqIqQeO0KHI5SRbdzlMRbloAAAAAQUIPAAAAAACONFudDowi2QmO+hbIEctx;
+        expires=Mon, 28 Jan 2019 12:39:13 GMT; path=/; Domain=.bitstamp.net
+      X-Iinfo:
+      - 4-68722432-68707860 PNNN RT(1517162835760 91) q(0 0 0 -1) r(0 0) U2
+      X-Cdn:
+      - Incapsula
+    body:
+      encoding: ASCII-8BIT
+      string: '{"sell": "1.2384", "buy": "1.2485"}'
+    http_version: 
+  recorded_at: Sun, 28 Jan 2018 18:07:16 GMT
+recorded_with: VCR 4.0.0

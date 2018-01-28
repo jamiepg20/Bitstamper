@@ -1,0 +1,82 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.bitstamp.net/api/v2/balance/
+    body:
+      encoding: UTF-8
+      string: key=BITSTAMP_KEY&nonce=1517136308023459072&signature=5991BEB5065B67CD0CA681F703C61B258FFEE4B0B8F82069A021ED6028513FE3
+    headers:
+      User-Agent:
+      - Bitstamp Ruby
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - x-requested-with, Content-Type, origin, accept, cache-control
+      Access-Control-Allow-Methods:
+      - POST, GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0
+      Content-Language:
+      - en
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 28 Jan 2018 10:45:08 GMT
+      Expires:
+      - Sun, 28 Jan 2018 10:45:08 GMT
+      Last-Modified:
+      - Sun, 28 Jan 2018 10:45:08 GMT
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Vary:
+      - Accept-Language
+      X-Frame-Options:
+      - SAMEORIGIN
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - "___utmvaIEumyLc=fru\x01OjDU; path=/; Max-Age=900"
+      - '___utmvbIEumyLc=gZH XcAONalL: Gte; path=/; Max-Age=900'
+      - ___utmvmIEumyLc=urKhsYXzeXa; path=/; Max-Age=900
+      - incap_ses_452_99025=/ir6b0Fh6VO263MpcdRFBrSpbVoAAAAAZaT+XnMSen3u26IiFHIx7A==;
+        path=/; Domain=.bitstamp.net
+      - nlbi_99025=bdCHB/CdqGyiwXku8F1n9AAAAAC+V/kI6cln6Demu6cKaSIN; path=/; Domain=.bitstamp.net
+      - visid_incap_99025=UsgXOqHNRyikyNDqKNKIgLSpbVoAAAAAQUIPAAAAAAD2MBhUWW016c19W0OPyTlm;
+        expires=Sun, 27 Jan 2019 12:38:58 GMT; path=/; Domain=.bitstamp.net
+      X-Iinfo:
+      - 10-127161464-127154986 PNNN RT(1517136307779 93) q(0 0 0 -1) r(2 2) U6
+      X-Cdn:
+      - Incapsula
+    body:
+      encoding: ASCII-8BIT
+      string: '{"bch_available": "0.00000000", "bch_balance": "0.00000000", "bch_reserved":
+        "0.00000000", "bchbtc_fee": "0.06", "bcheur_fee": "0.06", "bchusd_fee": "0.06",
+        "btc_available": "0.00000000", "btc_balance": "0.00000000", "btc_reserved":
+        "0.00000000", "btceur_fee": "0.25", "btcusd_fee": "0.25", "eth_available":
+        "0.00000000", "eth_balance": "0.00000000", "eth_reserved": "0.00000000", "ethbtc_fee":
+        "0.25", "etheur_fee": "0.25", "ethusd_fee": "0.25", "eur_available": "0.01",
+        "eur_balance": "1000.02", "eur_reserved": "1000.01", "eurusd_fee": "0.25",
+        "ltc_available": "0.00000000", "ltc_balance": "0.00000000", "ltc_reserved":
+        "0.00000000", "ltcbtc_fee": "0.25", "ltceur_fee": "0.25", "ltcusd_fee": "0.25",
+        "usd_available": "0.00", "usd_balance": "0.00", "usd_reserved": "0.00", "xrp_available":
+        "0.00000000", "xrp_balance": "0.00000000", "xrp_reserved": "0.00000000", "xrpbtc_fee":
+        "0.25", "xrpeur_fee": "0.25", "xrpusd_fee": "0.25"}'
+    http_version: 
+  recorded_at: Sun, 28 Jan 2018 10:45:08 GMT
+recorded_with: VCR 4.0.0

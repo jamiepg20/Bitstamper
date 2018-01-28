@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.bitstamp.net/api/unconfirmed_btc/
+    body:
+      encoding: UTF-8
+      string: key=BITSTAMP_KEY&nonce=1517157991741661952&signature=10A8C82DC1175E4B94F6E82F915432C396DCE45D70FF11DFED6E7C7E02FF58E5
+    headers:
+      User-Agent:
+      - Bitstamp Ruby
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - x-requested-with, Content-Type, origin, accept, cache-control
+      Access-Control-Allow-Methods:
+      - POST, GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0
+      Content-Language:
+      - en
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 28 Jan 2018 16:46:31 GMT
+      Expires:
+      - Sun, 28 Jan 2018 16:46:31 GMT
+      Last-Modified:
+      - Sun, 28 Jan 2018 16:46:31 GMT
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Vary:
+      - Accept-Language
+      X-Frame-Options:
+      - SAMEORIGIN
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - "___utmvaIEumyLc=Apt\x01ZIar; path=/; Max-Age=900"
+      - '___utmvbIEumyLc=IZP XqOOYaly: ZtM; path=/; Max-Age=900'
+      - ___utmvmIEumyLc=yzrFQCZoQse; path=/; Max-Age=900
+      - incap_ses_452_99025=qcVLZ0IM3j45wtIpcdRFBmf+bVoAAAAAwj8I8yRqhxC8Ba0/qdaQIA==;
+        path=/; Domain=.bitstamp.net
+      - nlbi_99025=7+n/dxjrDTT43x/s8F1n9AAAAAABRo+2Ua9Wpeioks/PPo/j; path=/; Domain=.bitstamp.net
+      - visid_incap_99025=EbpdhyWzShiTEYUONX8L42f+bVoAAAAAQUIPAAAAAAAuozDrKSsuKtpVnO7j+yoD;
+        expires=Mon, 28 Jan 2019 12:38:59 GMT; path=/; Domain=.bitstamp.net
+      X-Iinfo:
+      - 10-133319914-133238328 PNNN RT(1517157991431 85) q(0 0 0 -1) r(0 0) U6
+      X-Cdn:
+      - Incapsula
+    body:
+      encoding: ASCII-8BIT
+      string: "[]"
+    http_version: 
+  recorded_at: Sun, 28 Jan 2018 16:46:31 GMT
+recorded_with: VCR 4.0.0

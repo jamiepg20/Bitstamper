@@ -1,0 +1,32 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "bitstamper"
+require "yaml"
+
+cfg_path              =   File.join(File.dirname(__FILE__), "../credentials.yml")
+
+if ::File.exists?(cfg_path)
+  cfg                 =   YAML.load_file(cfg_path).fetch("full_permissions", {})
+
+  Bitstamper.configure do |config|
+    config.key        =   cfg["key"]
+    config.secret     =   cfg["secret"]
+    config.client_id  =   cfg["client_id"]
+  
+    config.faraday    =   {
+      user_agent: "Bitstamp Ruby",
+      verbose:    true
+    }
+  end
+end
+
+# You can add fixtures and/or initialization code here to make experimenting
+# with your gem easier. You can also use a different console, if you like.
+
+# (If you use this, don't forget to add pry to your Gemfile!)
+# require "pry"
+# Pry.start
+
+require "irb"
+IRB.start(__FILE__)
