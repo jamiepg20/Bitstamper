@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["sebastian.johnsson@gmail.com"]
 
   spec.summary       = %q{Ruby client for Bitstamp's API'}
-  spec.description   = %q{Rest + Websocket client for interacting with Bitstamp's API'}
+  spec.description   = %q{Ruby REST + Websocket client for interacting with Bitstamp's API}
   spec.homepage      = "https://github.com/SebastianJ/Bitstamper"
   spec.license       = "MIT"
 
