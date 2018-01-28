@@ -1,5 +1,3 @@
-This is a WIP, rewriting, refactoring and extending the original Bitstamp gem.
-
 # Bitstamper Ruby API
 
 Ruby client for interacting with Bitstamp. Originally inspired by the bitstamp gem but rewritten from the ground up and also includes additional API endpoints as well as websocket support.
